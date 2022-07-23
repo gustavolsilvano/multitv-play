@@ -2,6 +2,7 @@ import {normalize} from './fontSize';
 
 export const IMAGES = {
   LOGO: require('../assets/images/logo-black.png'),
+  CHANNEL_PLACEHOLDER: require('../assets/images/channel_sbt.png'),
 };
 
 export const SIZES = {
@@ -78,8 +79,10 @@ export const COLORS = {
   BLACK: '#000',
   BRAND: '#F1CC67',
   RED: '#D32F2F',
+  WHITE: '#FFF',
+  DARK_GRAY: '#1D1E22',
 };
 
 export const LOCAL_STORAGE = {
-  TOKEN: 'token',
+  TOKEN: 'auth',
 };

@@ -17,7 +17,7 @@ export const AuthProvider = ({children}) => {
       setAuth(result.data);
       await storage.storeData({
         key: LOCAL_STORAGE.TOKEN,
-        value: result.data.token,
+        value: result.data,
       });
     } catch (err) {
       console.log('AUTH_CONTEXT ==> handleLogin', err);
