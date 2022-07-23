@@ -1,4 +1,4 @@
-import React, {useMemo} from 'react';
+import React, {useEffect, useMemo} from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import HomeScreen from '../screens/HomeScreen';
@@ -37,12 +37,16 @@ const AuthStack = () => {
 
 const Router = () => {
   // HOOKS
-  const {token} = useAuth();
+  const {auth, handleInitialization} = useAuth();
 
   // MEMO
   const isAuthenticated = useMemo(() => {
-    return token != null;
-  }, [token]);
+    return auth != null;
+  }, [auth]);
+
+  useEffect(() => {
+    handleInitialization();
+  }, []);
 
   // RENDER
   return (

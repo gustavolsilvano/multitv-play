@@ -77,4 +77,9 @@ export const FONT_FAMILY_REGULAR = 'Rubik-Regular';
 export const COLORS = {
   BLACK: '#000',
   BRAND: '#F1CC67',
+  RED: '#D32F2F',
+};
+
+export const LOCAL_STORAGE = {
+  TOKEN: 'token',
 };

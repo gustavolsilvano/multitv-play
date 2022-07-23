@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
   },
   loginContainer: {
     width: '80%',
-    height: SIZES.size_280,
+    height: SIZES.size_340,
     backgroundColor: COLORS.BRAND,
     borderRadius: SIZES.size_12,
     justifyContent: 'center',

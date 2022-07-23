@@ -16,6 +16,10 @@ const styles = StyleSheet.create({
     width: '100%',
     height: SIZES.size_38,
     backgroundColor: 'white',
+    paddingLeft: SIZES.size_8,
+  },
+  errorMessage: {
+    color: COLORS.RED,
   },
 });
 
